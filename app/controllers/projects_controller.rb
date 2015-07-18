@@ -22,8 +22,23 @@ class ProjectsController < ApplicationController
         render :new
       end
     end
-    private
-    def project_params
-      params.require(:project).permit(:name, :description)
+
+  def edit
+    @project = Project.find(params[:id])
+    render :edit
+  end
+
+  def update
+    @project = Project.find(params[:id])
+    if @project.update(project_params)
+      redirect_to projects_path
+    else
+      render :edit
+    end
+  end
+
+  private
+  def project_params
+    params.require(:project).permit(:name, :description)
   end
 end
