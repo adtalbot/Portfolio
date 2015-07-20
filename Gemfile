@@ -7,6 +7,7 @@ gem('uglifier')
 gem('coffee-rails')
 gem('jquery-rails')
 gem('turbolinks')
+gem('bootstrap-sass', '~> 3.3.5')
 
 group(:development) do
   gem('byebug')
@@ -19,6 +20,7 @@ group(:test, :development) do
   gem('rspec-rails')
   gem('launchy')
   gem('pry')
+  gem('capybara')
 end
 
 group(:test) do

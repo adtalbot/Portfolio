@@ -1,3 +1,5 @@
+<% content_for(:title, "Project | Personal Portfolio") %>
+
 <h1>Projects:</h1>
 
 <ul>
@@ -5,3 +7,5 @@
     <li><%= link_to project.name, project_path(project) %></li>
   <% end %>
 </ul>
+
+<p><%= link_to 'Add a Project', new_project_path %></p>

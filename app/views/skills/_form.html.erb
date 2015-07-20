@@ -1,0 +1,9 @@
+<%= content_for(:title, "Skill | Personal Portfolio") %>
+
+<%= render('layouts/errors', :object => @skill) %>
+
+<%= form_for [@project, @skill] do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <p><%= f.submit %></p>
+<% end %>
