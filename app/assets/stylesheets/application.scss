@@ -2,30 +2,100 @@
 @import 'bootstrap';
 
 body {
-  background: url(https://unsplash.imgix.net/photo-1424746219973-8fe3bd07d8e3?dpr=2&fit=crop&fm=jpg&h=725&q=75&w=1050) no-repeat center center fixed;
+  font-family: 'Amatic SC', cursive;
+  font-size: 2em;
+}
+.nav a {
+  color: #5a5a5a;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+.nav li {
+  display: inline;
+}
+
+.jumbotron {
+  background-image:url('https://unsplash.imgix.net/photo-1424746219973-8fe3bd07d8e3?dpr=2&fit=crop&fm=jpg&h=725&q=75&w=1050');
+  height: 500px;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
-body {
-  text-align: center;
-  border: 5px;
-  color: white;
-  font-family: 'Exo 2', sans-serif;
-  text-decoration: none;
+.jumbotron .container {
+  position: relative;
+  top:100px;
+  padding-bottom: none;
 }
 
-ul {
-  text-align: center;
-  width:  200px;
-  margin: 0 auto;
-  text-align: left;
+.jumbotron h1 {
+  color: #fff;
+  font-size: 5ems;
 }
 
-a:visited {
-  color: white;
+.jumbotron p {
+  font-size: 3ems;
+  color: #fff;
 }
 
-h1 {
-  border-style: solid;
-  border-width: 5px;
+.col-md-4 {
+  background-color: #5a5a5a;
+}
+
+.learn-more {
+  background-color: #5a5a5a;
+  border-top: 1px solid #fff;
+  padding: 15px;
+}
+
+.learn-more h3 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 4ems;
+  font-weight: bold;
+}
+
+.learn-more a {
+  color: #00b0ff;
+}
+
+.projects {
+    background-color: #5a5a5a;
+    border-bottom: 1px solid #5a5a5a;
+}
+
+.projects h2 {
+    color: #fff;
+    font-size: 3ems;
+}
+
+.projects p {
+    color: #fff;
+    font-size: 3ems;
+    margin-bottom: 13px;
+}
+
+.thumbnail {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1em;
+    color: #fff;
+    line-height: 100px;
+    text-align: center;
+    text-decoration: none;
+    background: #5a5a5a;
+    padding: auto;
+  }
+
+.thumbnail:hover {
+    color:#999999;
+    text-decoration:none;
+    background:#333;
+}
+
+.thumbnail {
+  color: #999999;
 }

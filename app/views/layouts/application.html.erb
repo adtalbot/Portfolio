@@ -6,15 +6,116 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <h1>AUDRIE TALBOT | PORTFOLIO</h1>
+  <div class='nav'>
+    <div class='container'>
+      <ul class='pull-left'>
+        <li><a href='#'>Home</a></li>
+        <li><a href='#'>About</a></li>
+      </ul>
+      <ul class='pull-right'>
+        <li><a href='#'>Sign Up</a></li>
+        <li><a href='#'>Log In</a></li>
+      </ul>
+    </div>
+  </div>
 
-  <p>My name is Audrie. Welcome to my portfolio.</p>
+  <div class='jumbotron'>
+    <div class='container'>
+      <h1>Audrie Talbot | Portfolio </h1>
+      <p>My name is Audrie. Welcome to my portfolio.</p>
+      <a href='#'>Learn more about Me</a>
+    </div>
+  </div>
 
-  <%= flash[:alert] %>
-  <%= flash[:notice] %>
+  <div class='projects'>
+    <div class='container'>
+      <h2>My Skills</h2>
+      <p>What I know...</p>
+
+      <div class='row'>
+        <div class='col-md-2'>
+          <div class='thumbnail'>
+            <a href='#'>HTML 5</a>
+          </div>
+          <div class='thumbnail'>
+            <a href='#'>CSS 3</a>
+          </div>
+        </div>
+
+        <div class='col-md-2'>
+          <div class='thumbnail'>
+            <a href='#'>JavaScript</a>
+          </div>
+          <div class='thumbnail'>
+            <a href='#'>Ruby</a>
+          </div>
+        </div>
+
+        <div class='col-md-2'>
+          <div class='thumbnail'>
+            <a href='#'>Ruby on Rails</a>
+          </div>
+          <div class='thumbnail'>
+            <a href='#'>jQuery</a>
+          </div>
+        </div>
+
+        <div class='col-md-2'>
+          <div class='thumbnail'>
+            <a href='#'>SQL</a>
+          </div>
+          <div class='thumbnail'>
+            <a href='#'>Github</a>
+          </div>
+        </div>
+
+        <div class='col-md-2'>
+          <div class='thumbnail'>
+            <a href='#'>Agile</a>
+          </div>
+          <div class='thumbnail'>
+            <a href='#'>AJAX</a>
+          </div>
+        </div>
+
+        <div class='col-md-2'>
+          <div class='thumbnail'>
+            <a href='#'>TDD</a>
+          </div>
+          <div class='thumbnail'>
+            <a href='#'>Ractive</a>
+          </div>
+        </div>
+      </div>
+
+      <div class='learn-more'>
+        <div class='container'>
+          <div class='row'>
+            <div class='col-md-4'>
+              <h3>Ping Pong Project</h3>
+              <p>The classic ping pong game imagined</p>
+              <p><a href='#'>Github</a></p>
+            </div>
+
+            <div class='col-md-4'>
+              <h3>Palindrome</h3>
+              <p>The classic ping pong game imagined</p>
+              <p><a href='#'>Github</a></p>
+            </div>
+
+            <div class='col-md-4'>
+              <h3>Word Search</h3>
+              <p>The classic ping pong game imagined</p>
+              <p><a href='#'>Github</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <%= yield %>
 

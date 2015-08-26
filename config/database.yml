@@ -4,14 +4,14 @@ default: &default
 
 development:
   <<: *default
-  database: to_do_development
+  database: personal_portfolio_development
 
 test:
   <<: *default
-  database: to_do_test
+  database: personal_portfolio_test
 
 production:
   <<: *default
-  database: to_do_production
-  username: to_do
+  database: personal_portfolio_production
+  username: personal_portfolio
   password: <%= ENV['EXAMPLE_DATABASE_PASSWORD'] %>
