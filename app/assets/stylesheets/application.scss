@@ -18,7 +18,7 @@ body {
 
 .jumbotron {
   background-image:url('https://unsplash.imgix.net/photo-1424746219973-8fe3bd07d8e3?dpr=2&fit=crop&fm=jpg&h=725&q=75&w=1050');
-  height: 500px;
+  height: 600px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -37,6 +37,7 @@ body {
 .jumbotron p {
   font-size: 3ems;
   color: #fff;
+  font-weight: bold;
 }
 
 .col-md-4 {
@@ -60,42 +61,42 @@ body {
 }
 
 .projects {
-    background-color: #5a5a5a;
-    border-bottom: 1px solid #5a5a5a;
+  background-color: #5a5a5a;
+  border-bottom: 1px solid #5a5a5a;
 }
 
 .projects h2 {
-    color: #fff;
-    font-size: 3ems;
+  color: #fff;
+  font-size: 3ems;
 }
 
 .projects p {
-    color: #fff;
-    font-size: 3ems;
-    margin-bottom: 13px;
+  color: #fff;
+  font-size: 3ems;
+  margin-bottom: 13px;
 }
 
 .thumbnail {
-    display: block;
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    font-family: 'Amatic SC', cursive;
-    font-size: 1em;
-    color: #fff;
-    line-height: 100px;
-    text-align: center;
-    text-decoration: none;
-    background: #5a5a5a;
-    padding: auto;
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  font-family: 'Amatic SC', cursive;
+  font-size: 1em;
+  line-height: 100px;
+  text-align: center;
+  text-decoration: none;
+  background: #5a5a5a;
+  padding: auto;
+  font-weight: bold;
   }
 
 .thumbnail:hover {
-    color:#999999;
-    text-decoration:none;
-    background:#333;
+  text-decoration:none;
+  background:#333;
 }
 
-.thumbnail {
-  color: #999999;
+.form-container {
+  text-align: center;
+  padding-left: 50px;
 }
